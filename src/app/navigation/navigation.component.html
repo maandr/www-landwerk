@@ -1,0 +1,7 @@
+<nav>
+  <ul>
+    <li *ngFor="let entry of entries">
+      <a routerLink="{{entry.href}}">{{entry.label}}</a>
+    </li>
+  </ul>
+</nav>
