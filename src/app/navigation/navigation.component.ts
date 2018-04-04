@@ -14,14 +14,14 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
     this.entries = [
-      { label: 'About', href: '/über-uns' },
-      { label: 'Dienstleistungen', href: '/dienstleistungen' },
-      { label: 'Kontakt', href: '/kontakt' }
+      { label: 'About', anchor: 'ueber-uns' },
+      { label: 'Dienstleistungen', anchor: 'dienstleistungen' },
+      { label: 'Kontakt', anchor: 'kontakt' }
     ];
   }
 }
 
 interface NavigationEntry {
   label: string;
-  href: string;
+  anchor: string;
 }

@@ -4,16 +4,17 @@ import { AboutComponent } from './about/about.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/about', pathMatch: 'full' },
-  { path: 'about', component: AboutComponent },
-  { path: 'ueber-uns', component: AboutComponent },
-  { path: 'über-uns', component: AboutComponent },
-  { path: 'services', component: ServicesComponent },
-  { path: 'dienstleistungen', component: ServicesComponent },
-  { path: 'kontakt', component: ContactComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: '', component: LandingPageComponent },
+  { path: 'about', component: LandingPageComponent },
+  { path: 'ueber-uns', component: LandingPageComponent },
+  { path: 'über-uns', component: LandingPageComponent },
+  { path: 'services', component: LandingPageComponent },
+  { path: 'dienstleistungen', component: LandingPageComponent },
+  { path: 'kontakt', component: LandingPageComponent },
+  { path: 'contact', component: LandingPageComponent },
   { path: 'impressum', component: ImpressumComponent }
 ];
 
