@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ImageSlide, Carousel } from './image-carousel.types'
 
 @Component({
   selector: 'landwerk-image-carousel',
@@ -38,16 +39,4 @@ export class ImageCarouselComponent implements OnInit {
      ? (this.slides.length - 1)
      : this.index - 1;
   }
-}
-
-export interface Carousel {
-  name: string;
-  id: string;
-}
-
-export interface ImageSlide {
-  src: string;
-  alt: string;
-  caption?: string;
-  href?: string;
 }
