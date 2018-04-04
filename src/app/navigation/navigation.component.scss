@@ -1,9 +1,10 @@
+@import '~sass/variables';
+
 header {
     height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin-bottom: 40px;
 }
 #logo {
     background-image: url('../../assets/images/landwerk-logo.jpg'); /* TODO: convert to .svg */
@@ -12,12 +13,9 @@ header {
     height: 150px;
     width: 320px;
 }
-nav {
-    margin-bottom: 40px;
-}
 nav.navbar {
+    margin-bottom: 20px;
     background-color: #fff;
-    border-bottom: 2px solid #efefef;
 }
 nav ul {
     list-style-type: none;
@@ -30,11 +28,11 @@ nav ul li {
     margin: 0 5px;
     line-height: 30px;
     text-align: center;
-    border-bottom: 5px green solid;
+    border-bottom: 5px $dark-color solid;
 }
 nav ul li a {
     text-decoration: none;
 }
 nav ul li:hover {
-    border-bottom: 0.5em lightseagreen solid;
+    border-bottom: 5px $light-color solid;
 }
