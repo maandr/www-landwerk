@@ -10,6 +10,7 @@ import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
     ServicesComponent,
     ContactComponent,
     NavigationComponent,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
