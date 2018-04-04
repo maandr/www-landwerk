@@ -9,6 +9,7 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     ImpressumComponent,
     ServicesComponent,
     ContactComponent,
-    NavigationComponent
+    NavigationComponent,
+    ImageCarouselComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+.carousel {
+    width: 720px;
+    height: 350px;
+}
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+    cursor: pointer;
+}
+
+ol li.active {
+    background-color: lightgreen;
+}
