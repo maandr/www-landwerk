@@ -16,8 +16,7 @@ export class NavigationComponent implements OnInit {
     this.entries = [
       { label: 'About', href: '/über-uns' },
       { label: 'Dienstleistungen', href: '/dienstleistungen' },
-      { label: 'Kontakt', href: '/kontakt' },
-      { label: 'Impressum', href: '/impressum' },
+      { label: 'Kontakt', href: '/kontakt' }
     ];
   }
 }
