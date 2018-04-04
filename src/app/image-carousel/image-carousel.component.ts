@@ -48,4 +48,6 @@ export interface Carousel {
 export interface ImageSlide {
   src: string;
   alt: string;
+  caption?: string;
+  href?: string;
 }

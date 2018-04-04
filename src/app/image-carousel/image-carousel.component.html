@@ -14,7 +14,12 @@
     <div *ngFor="let slide of slides"
       class="carousel-item"
       [class.active]="index === slides.indexOf(slide)">
-      <img src="{{slide.src}}" alt="{{slide.alt}}" class="img-responsive" />  
+      <img src="{{slide.src}}" alt="{{slide.alt}}" class="img-responsive" />
+      <div *ngIf="slide.caption" class="container">
+        <div class="carousel-caption text-left">
+          {{slide.caption}}
+        </div>
+      </div>
     </div>
   </div>
 
