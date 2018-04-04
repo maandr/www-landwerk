@@ -14,7 +14,7 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
     this.entries = [
-      { label: 'About', anchor: 'ueber-uns' },
+      { label: 'Über uns', anchor: 'ueber-uns' },
       { label: 'Dienstleistungen', anchor: 'dienstleistungen' },
       { label: 'Kontakt', anchor: 'kontakt' }
     ];
