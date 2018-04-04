@@ -65,5 +65,23 @@
             "src": "26.jpg",
             "alt": "Montagearbeiten aller Art (Lauben, Gartenhäuser, Gewächshäuser, Stege, u.ä.)"
         }
+    ],
+    "services": [
+        "Planungsarbeiten (Garten und Grundstück)",
+        "Erstellung von Gartenanlagen (Beet- und Pflanzflächen)",
+        "Begrünung (Pflanzenlieferung, Pflanzen-Einbau)",
+        "Strauch- und Pflanzenschnitt nach Art und Struktur",
+        "Heckenschnitt, Fräs- und Mulcharbeiten",
+        "Erstellung von Rasenanlagen (Saatverfahren, optional Rollrasen)",
+        "Erstellung von Teichanlagen (Folie, Lehmziegel o.ä.)",
+        "Anlagenpflege (mähen, entkrauten, schneiden)",
+        "Gartenpflege saisonal",
+        "Dauerpflegearbeiten über die Vegetationsperiode",
+        "Pflasterarbeiten (Gehwege, Terrasse, Einfahrten)",
+        "Erdarbeiten (Drainierung, Kanalisation)",
+        "Erstellung Naturseteinmauern / Friesenwälle",
+        "Zaunbauarbeiten (Holz, Kunststoff, Metall, in Form und Farbe)",
+        "Montagearbeiten aller Art (Lauben, Gartenhäuser, Gewächshäuser, Stege, u.ä.)",
+        "Abfuhr und Entsorgung von Grünabfällen"
     ]
 }

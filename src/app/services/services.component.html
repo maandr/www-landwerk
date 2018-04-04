@@ -1,140 +1,45 @@
 <div class="row">
-  <div class="col-md-6">
-    <div class="card mb-6">
-      <landwerk-image-carousel class="card-img-top"
-        [name]="garten-und-landschaftsbau-carousel"
-        [slides]="slides.garden">
-      </landwerk-image-carousel>
 
-      <div class="card-body">
-        <div class="card-text">
-          <h3>Garten und Landschaftsbau</h3>
-          <ul>
-            <li>Planungsarbeiten (Garten und Grundstück)</li>
-            <li>Erstellung von Gartenanlagen (Beet- und Pflanzflächen)</li>
-            <li>Begrünung (Pflanzenlieferung, Pflanzen-Einbau)</li>
-            <li>Strauch- und Pflanzenschnitt nach Art und Struktur</li>
-            <li>Heckenschnitt, Fräs- und Mulcharbeiten</li>
-            <li>Erstellung von Rasenanlagen (Saatverfahren, optional Rollrasen)</li>
-            <li>Erstellung von Teichanlagen (Folie, Lehmziegel o.ä.)</li>
-            <li>Anlagenpflege (mähen, entkrauten, schneiden)</li>
-            <li>Gartenpflege saisonal</li>
-            <li>Dauerpflegearbeiten über die Vegetationsperiode</li>
-            <li>Pflasterarbeiten (Gehwege, Terrasse, Einfahrten)</li>
-            <li>Erdarbeiten (Drainierung, Kanalisation)</li>
-            <li>Erstellung Naturseteinmauern / Friesenwälle</li>
-            <li>Zaunbauarbeiten (Holz, Kunststoff, Metall, in Form und Farbe)</li>
-            <li>Montagearbeiten aller Art (Lauben, Gartenhäuser, Gewächshäuser, Stege, u.ä.)</li>
-            <li>Abfuhr und Entsorgung von Grünabfällen</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <div class="col-md-6">
+      <landwerk-service-card
+        name="garden"
+        title="Garten- und Landschaftsbau">
+      </landwerk-service-card>
   </div>
 
   <div class="col-md-6">
-    <div class="card mb-6 box-shadow">
-        <landwerk-image-carousel class="card-img-top"
-        [name]="forstarbeiten-carousel"
-        [slides]="slides.forestry">
-      </landwerk-image-carousel>
-      <div class="card-body">
-        <div class="card-text">
-          <h3>Forstarbeiten</h3>
-          <ul>
-            <li>Holzerntemaßnahmen</li>
-            <li>Kulturbegründung</li>
-            <li>Jungbestandspflege, Läuterungen</li>
-            <li>Holzrückearbeiten (Seilwinden, Forwarder)</li>
-            <li>Zaunbauarbeiten (Wildschutzzäune, Wanderzäune, Weidezäune)</li>
-            <li>Starkholzfällung, Wertholzaufbereitung</li>
-            <li>Forstschutz (biotisch / abiotisch)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <landwerk-service-card
+        name="forestry"
+        title="Forstarbeiten">
+      </landwerk-service-card>
   </div>
 
   <div class="col-md-6">
-    <div class="card mb-6 box-shadow">
-        <landwerk-image-carousel class="card-img-top"
-        [name]="forstarbeiten-carousel"
-        [slides]="slides.forestry">
-      </landwerk-image-carousel>
-      <div class="card-body">
-        <div class="card-text">
-          <h3>Baumarbeiten (Privat und Kommunal)</h3>
-          <ul>
-            <li>Baumfällungen auch in schwierigsten Fällen</li>
-            <li>Kronenschnitt / Wipfelköpfung</li>
-            <li>Einsatz von Hubsteigern jeglicher Art</li>
-            <li>Einsatz von Schwerlastkränen (bis 120 Tonnen)</li>
-            <li>Schreddereinsatz manuell / maschinell bis 35 cm</li>
-            <li>einholen und durchführen verkehrsregelnder Maßnahmen (optional)</li>
-            <li>Antragsabwicklung / Fällgenehmigung nach Baumschutzsatzung</li>
-            <li>Baumchirurgie / Baumsanierung</li>
-            <li>Baumbeurteilung / Baumgutachten</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <landwerk-service-card
+        name="trees"
+        title="Baumarbeiten (Privat und Kommunal)">
+      </landwerk-service-card>
   </div>
 
   <div class="col-md-6">
-    <div class="card mb-6 box-shadow">
-        <landwerk-image-carousel class="card-img-top"
-        [name]="forstarbeiten-carousel"
-        [slides]="slides.machines">
-      </landwerk-image-carousel>
-      <div class="card-body">
-        <div class="card-text">
-          <h3>Maschineneinsatz</h3>
-          <ul>
-            <li>Bagger, Minibagger, Radlader, Verdichter, Walze</li>
-            <li>Schredder (bis 35 cm)</li>
-            <li>Seilweinde funkgesteuert (2x 5,5 Tonnen)</li>
-            <li>Forwarder</li>
-            <li>Motorsäge, Motorsense</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <landwerk-service-card
+        name="machines"
+        title="Maschineneinsatz">
+      </landwerk-service-card>
   </div>
 
   <div class="col-md-6">
-    <div class="card mb-6 box-shadow">
-        <landwerk-image-carousel class="card-img-top"
-        [name]="forstarbeiten-carousel"
-        [slides]="slides.chainsaws">
-      </landwerk-image-carousel>
-      <div class="card-body">
-        <div class="card-text">
-          <h3>Motorsägenseminare</h3>
-          <ul>
-            <li>Organisation und Durchführung von MS-Lehrgängen für private oder gewerbliche Nutzer durch autorisierte Fachkraft</li>
-            <li>Erteilung und Ausstellung eines Befähigungsnachweises</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <landwerk-service-card
+        name="chainsaws"
+        title="Motorsägenseminare">
+      </landwerk-service-card>
   </div>
 
   <div class="col-md-6">
-    <div class="card mb-6 box-shadow">
-        <landwerk-image-carousel class="card-img-top"
-        [name]="forstarbeiten-carousel"
-        [slides]="slides.winter">
-      </landwerk-image-carousel>
-      <div class="card-body">
-        <div class="card-text">
-          <h3>Winterdienstarbeiten im privaten Bereich</h3>
-          <ul>
-            <li>Bürgersteige, Gehwege, Haus- und Hofeinfahrten</li>
-            <li>Räumungsarbeiten nach den örtlichen / regionalen Vorgaben</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <landwerk-service-card
+        name="winter"
+        title="Winterdienstarbeiten im privaten Bereich">
+      </landwerk-service-card>
   </div>
 
 </div>

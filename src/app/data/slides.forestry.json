@@ -33,5 +33,14 @@
             "src": "35.jpg",
             "alt": "Starkholzfällung, Wertholzaufbereitung"
         }
+    ],
+    "services": [
+        "Holzerntemaßnahmen",
+        "Kulturbegründung",
+        "Jungbestandspflege, Läuterungen",
+        "Holzrückearbeiten (Seilwinden, Forwarder)",
+        "Zaunbauarbeiten (Wildschutzzäune, Wanderzäune, Weidezäune)",
+        "Starkholzfällung, Wertholzaufbereitung",
+        "Forstschutz (biotisch / abiotisch)"
     ]
 }

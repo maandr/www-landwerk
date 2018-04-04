@@ -1,0 +1,17 @@
+<div class="card mb-6">
+  <landwerk-image-carousel class="card-img-top"
+    [name]="name + '-carousel'"
+    [slides]="slides">
+  </landwerk-image-carousel>
+
+  <div class="card-body">
+    <div class="card-text">
+      <h3>{{ title }}</h3>
+      <ul>
+        <li *ngFor="let service of services">
+          {{service}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
