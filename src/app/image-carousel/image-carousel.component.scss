@@ -1,6 +1,6 @@
+@import '~sass/variables';
+
 .carousel {
-    width: 720px;
-    height: 350px;
     margin: auto;
 }
 
@@ -17,4 +17,13 @@
 
 ol li.active {
     background-color: lightgreen;
+}
+
+.card-img-top {
+    width: 400px;
+    overflow: hidden;
+}
+
+.card-text h3 {
+    color: $dark-color;
 }

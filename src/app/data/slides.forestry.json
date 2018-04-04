@@ -1,0 +1,37 @@
+{
+    "imageBaseDir": "../../assets/images/slider/",
+    "slides": [
+        { 
+            "src": "6.jpg",
+            "alt": "Holzerntemaßnahmen"
+        },
+        { 
+            "src": "11.jpg",
+            "alt": "Holzerntemaßnahmen"
+        },
+        {
+            "src": "12.jpg",
+            "alt": "Jungbestandspflege, Läuterungen"
+        },
+        {
+            "src": "29.jpg",
+            "alt": "Holzrückearbeiten (Seilwinden, Forwarder)"
+        },
+        {
+            "src": "31.jpg",
+            "alt": "Zaunbauarbeiten (Wildschutzzäune, Wanderzäune, Weidezäune)"
+        },
+        {
+            "src": "34.jpg",
+            "alt": "Zaunbauarbeiten (Wildschutzzäune, Wanderzäune, Weidezäune)"
+        },
+        {
+            "src": "13.jpg",
+            "alt": "Zaunbauarbeiten (Wildschutzzäune, Wanderzäune, Weidezäune)"
+        },
+        {
+            "src": "35.jpg",
+            "alt": "Starkholzfällung, Wertholzaufbereitung"
+        }
+    ]
+}

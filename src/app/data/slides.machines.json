@@ -1,0 +1,25 @@
+{
+    "imageBaseDir": "../../assets/images/slider/",
+    "slides": [
+        { 
+            "src": "37.jpg",
+            "alt": "Bagger, Minibagger, Radlader, Verdichter, Walze"
+        },
+        { 
+            "src": "33.jpg",
+            "alt": "Bagger, Minibagger, Radlader, Verdichter, Walze"
+        },
+        {
+            "src": "10.jpg",
+            "alt": "Schredder (bis 35 cm)"
+        },
+        {
+            "src": "11.jpg",
+            "alt": "Forwarder"
+        },
+        {
+            "src": "29.jpg",
+            "alt": "Seilweinde funkgesteuert (2x 5,5 Tonnen)"
+        }
+    ]
+}

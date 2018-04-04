@@ -4,7 +4,7 @@ import { ImageSlide, Carousel } from './image-carousel.types'
 @Component({
   selector: 'landwerk-image-carousel',
   templateUrl: './image-carousel.component.html',
-  styleUrls: ['./image-carousel.component.css']
+  styleUrls: ['./image-carousel.component.scss']
 })
 export class ImageCarouselComponent implements OnInit {
 

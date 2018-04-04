@@ -1,0 +1,9 @@
+{
+    "imageBaseDir": "../../assets/images/slider/",
+    "slides": [
+        { 
+            "src": "38.jpg",
+            "alt": "Winterdienstarbeiten"
+        }
+    ]
+}

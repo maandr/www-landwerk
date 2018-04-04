@@ -1,0 +1,21 @@
+{
+    "imageBaseDir": "../../assets/images/slider/",
+    "slides": [
+        { 
+            "src": "10.jpg",
+            "alt": "Schreddereinsatz manuell / maschinell bis 35 cm"
+        },
+        { 
+            "src": "6.jpg",
+            "alt": "Baumfällungen auch in schwierigsten Fällen"
+        },
+        {
+            "src": "12.jpg",
+            "alt": "Kronenschnitt / Wipfelköpfung"
+        },
+        {
+            "src": "29.jpg",
+            "alt": "Einsatz von Schwerlastkränen (bis 120 Tonnen)"
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "imageBaseDir": "../../assets/images/slider/",
+    "slides": [
+        { 
+            "src": "4.jpg",
+            "alt": "Planungsarbeiten (Garten und Grundstück)"
+        },
+        { 
+            "src": "3.jpg",
+            "alt": "Erstellung von Gartenanlagen (Beet- und Pflanzflächen)"
+        },
+        { 
+            "src": "1.jpg",
+            "alt": "Begrünung (Pflanzenlieferung, Pflanzen-Einbau)"
+        },
+        { 
+            "src": "25.jpg",
+            "alt": "Begrünung (Pflanzenlieferung, Pflanzen-Einbau)"
+        },
+        { 
+            "src": "14.jpg",
+            "alt": "Heckenschnitt, sowie Strauch- und Pflanzenschnitt nach Art und Struktur"
+        },
+        { 
+            "src": "24.jpg",
+            "alt": "Fräs- und Mulcharbeiten"
+        },
+        { 
+            "src": "27.jpg",
+            "alt": "Erstellung von Rasenanlagen (Saatverfahren, optional Rollrasen)"
+        },
+        { 
+            "src": "37.jpg",
+            "alt": "Erstellung von Teichanlagen (Folie, Lehmziegel o.ä.)"
+        },
+        { 
+            "src": "7.jpg",
+            "alt": "Pflasterarbeiten (Gehwege, Terrasse, Einfahrten)"
+        },
+        { 
+            "src": "28.jpg",
+            "alt": "Pflasterarbeiten (Gehwege, Terrasse, Einfahrten)"
+        },
+        { 
+            "src": "17.jpg",
+            "alt": "Pflasterarbeiten (Gehwege, Terrasse, Einfahrten)"
+        },
+        { 
+            "src": "23.jpg",
+            "alt": "Erstellung Naturseteinmauern / Friesenwälle"
+        },
+        { 
+            "src": "9.jpg",
+            "alt": "Zaunbauarbeiten (Holz, Kunststoff, Metall, in Form und Farbe)"
+        },
+        { 
+            "src": "30.jpg",
+            "alt": "Zaunbauarbeiten (Holz, Kunststoff, Metall, in Form und Farbe)"
+        },
+        { 
+            "src": "5.jpg",
+            "alt": "Montagearbeiten aller Art (Lauben, Gartenhäuser, Gewächshäuser, Stege, u.ä.)"
+        },
+        { 
+            "src": "26.jpg",
+            "alt": "Montagearbeiten aller Art (Lauben, Gartenhäuser, Gewächshäuser, Stege, u.ä.)"
+        }
+    ]
+}
