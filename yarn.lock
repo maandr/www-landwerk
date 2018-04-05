@@ -180,6 +180,10 @@
     tree-kill "^1.0.0"
     webpack-sources "^1.1.0"
 
+"@nicky-lenaers/ngx-scroll-to@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nicky-lenaers/ngx-scroll-to/-/ngx-scroll-to-0.6.0.tgz#6d2922f5765a472e3c86499d9e53df5ca210e637"
+
 "@schematics/angular@0.3.2":
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-0.3.2.tgz#be209a032a3e4577992d94fbaa14bd4bfde485e2"

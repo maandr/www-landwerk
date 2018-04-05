@@ -9,8 +9,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li *ngFor="let entry of entries" class="nav-item" [class.active]="entry === activeEntry">
-            <a class="nav-link" [attr.href]="'#' + entry.anchor">{{entry.label}}</a>
+          <li *ngFor="let entry of entries" 
+            class="nav-item" 
+            [class.active]="entry === activeEntry"
+            (click)="open(entry)">
+            <a class="nav-link">{{entry.label}}</a>
           </li>
         </ul>
       </div>

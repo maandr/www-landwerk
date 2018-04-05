@@ -36,3 +36,6 @@ nav ul li a {
 nav ul li:hover {
     border-bottom: 5px $light-color solid;
 }
+.nav-item {
+    cursor: pointer;
+}
