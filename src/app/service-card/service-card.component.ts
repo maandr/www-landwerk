@@ -31,7 +31,7 @@ export class ServiceCardComponent extends CarouselMixin implements OnInit {
 
   private fetchStaticDataFromJsonFile() {
     // filepath?
-    this.dataSource = this.localFileService.getJson<ServiceDataJson>('slides.' + this.name);
+    this.dataSource = this.localFileService.getJson<ServiceDataJson>('service.' + this.name);
     this.dataSource.subscribe(response => {
       this.slides = this.extractImageSlides(response);
       this.services = response.services;
