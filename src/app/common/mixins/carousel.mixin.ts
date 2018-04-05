@@ -1,8 +1,10 @@
 import { ImageSlide } from "../../image-carousel/image-carousel.types";
+import { Injectable } from "@angular/core";
 
-export abstract class CarouselMixin {
+@Injectable()
+export class CarouselMixin {
 
-    protected extractImageSlides(dataJson: ServiceDataJson): ImageSlide[] {
+    public extractImageSlides(dataJson: ServiceDataJson): ImageSlide[] {
         let slides = [];
         dataJson.slides.forEach((slide) => {
             slides.push(this.fromJson(slide, dataJson.imageBaseDir))
@@ -10,7 +12,7 @@ export abstract class CarouselMixin {
         return slides;
     }
 
-    protected fromJson(json: ImageSlide, basePath: string) {
+    public fromJson(json: ImageSlide, basePath: string) {
         return {
             src: basePath + json.src,
             alt: json.alt,
@@ -23,5 +25,5 @@ export abstract class CarouselMixin {
 export interface ServiceDataJson {
     imageBaseDir: string;
     slides: ImageSlide[];
-    services: string[];
+    bulletpoints: string[];
 }

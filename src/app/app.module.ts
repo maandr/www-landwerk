@@ -17,6 +17,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LocalFileService } from './local-file.service';
 import { RoutingService } from './routing.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CarouselMixin } from './common/mixins/carousel.mixin';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   ],
   providers: [
     LocalFileService,
-    RoutingService
+    RoutingService,
+    CarouselMixin
   ],
   bootstrap: [AppComponent]
 })
