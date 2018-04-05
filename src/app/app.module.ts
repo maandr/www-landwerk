@@ -18,6 +18,7 @@ import { LocalFileService } from './local-file.service';
 import { RoutingService } from './routing.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CarouselMixin } from './common/mixins/carousel.mixin';
+import { JobsComponent } from './jobs/jobs.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CarouselMixin } from './common/mixins/carousel.mixin';
     ImageCarouselComponent,
     FooterComponent,
     ServiceCardComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,
