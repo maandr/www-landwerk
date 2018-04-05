@@ -5,6 +5,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: left;
+    margin-bottom: 2rem;
 }
 #logo {
     background-image: url('../../assets/images/landwerk-logo.jpg'); /* TODO: convert to .svg */

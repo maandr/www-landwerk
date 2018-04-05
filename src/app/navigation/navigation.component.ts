@@ -20,8 +20,7 @@ export class NavigationComponent implements OnInit {
     this.relations = [
       { label: 'Über uns', href: '/', anchor: 'ueber-uns' },
       { label: 'Dienstleistungen', href: '/', anchor: 'dienstleistungen' },
-      { label: 'Kontakt', href: '/', anchor: 'kontakt' },
-      { label: 'Impressum', href: '/impressum' }
+      { label: 'Kontakt', href: '/', anchor: 'kontakt' }
     ];
   }
 }
