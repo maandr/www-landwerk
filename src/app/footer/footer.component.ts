@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RoutingService, Relation } from '../routing.service';
 
 @Component({
   selector: 'landwerk-footer',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  relations: Relation[];
+
+  constructor(
+    public routingService: RoutingService
+  ) {}
 
   ngOnInit() {
+    this.relations = [
+      { label: 'Kontakt', href: '', anchor: 'kontakt' },
+      { label: 'Stellenangebote', href: '/stellenangebote' },
+      { label: 'Impressum', href: '/impressum' },
+    ];
   }
-
 }

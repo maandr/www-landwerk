@@ -1,13 +1,15 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 import { ImageSlide } from '../image-carousel/image-carousel.types';
-import { JsonLoader } from '../common/data-import';
+import { CarouselMixin, ServiceDataJson } from '../common/mixins/carousel.mixin';
+import { LocalFileService } from '../local-file.service';
 
 @Component({
   selector: 'landwerk-service-card',
   templateUrl: './service-card.component.html',
   styleUrls: ['./service-card.component.scss']
 })
-export class ServiceCardComponent implements OnInit {
+export class ServiceCardComponent extends CarouselMixin implements OnInit {
 
   @Input() name: string;
   @Input() title: string;
@@ -15,13 +17,24 @@ export class ServiceCardComponent implements OnInit {
   slides: ImageSlide[];
   services: string[];
 
+  private dataSource: Observable<ServiceDataJson>;
+
+  constructor(
+    private localFileService: LocalFileService
+  ) {
+    super();
+  }
+
   ngOnInit() {
     this.fetchStaticDataFromJsonFile();
   }
 
   private fetchStaticDataFromJsonFile() {
-    const dataJson = require('../data/slides.' + this.name + '.json');
-    this.slides = JsonLoader.loadSlides(dataJson);
-    this.services = dataJson.services;
+    // filepath?
+    this.dataSource = this.localFileService.getJson<ServiceDataJson>('slides.' + this.name);
+    this.dataSource.subscribe(response => {
+      this.slides = this.extractImageSlides(response);
+      this.services = response.services;
+    });
   }
 }

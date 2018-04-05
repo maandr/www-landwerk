@@ -1,16 +1,16 @@
-import { ImageSlide } from "../image-carousel/image-carousel.types";
+import { ImageSlide } from "../../image-carousel/image-carousel.types";
 
-export abstract class JsonLoader {
+export abstract class CarouselMixin {
 
-    static loadSlides(dataJson: ServiceDataJson): ImageSlide[] {
+    protected extractImageSlides(dataJson: ServiceDataJson): ImageSlide[] {
         let slides = [];
         dataJson.slides.forEach((slide) => {
-            slides.push(JsonLoader.fromJson(slide, dataJson.imageBaseDir))
+            slides.push(this.fromJson(slide, dataJson.imageBaseDir))
         });
         return slides;
     }
 
-    private static fromJson(json: ImageSlide, basePath: string) {
+    protected fromJson(json: ImageSlide, basePath: string) {
         return {
             src: basePath + json.src,
             alt: json.alt,

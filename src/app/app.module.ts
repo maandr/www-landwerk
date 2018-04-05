@@ -14,6 +14,9 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
 import { FooterComponent } from './footer/footer.component';
 import { ServiceCardComponent } from './service-card/service-card.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LocalFileService } from './local-file.service';
+import { RoutingService } from './routing.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -31,10 +34,14 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     ScrollToModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    LocalFileService,
+    RoutingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

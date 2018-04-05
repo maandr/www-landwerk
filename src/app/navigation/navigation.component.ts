@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 import { Router } from '@angular/router';
+import { ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
+import { RoutingService, Relation } from '../routing.service';
 
 @Component({
   selector: 'landwerk-navigation',
@@ -9,36 +10,18 @@ import { Router } from '@angular/router';
 })
 export class NavigationComponent implements OnInit {
 
-  entries: NavigationEntry[];
+  relations: Relation[];
 
   constructor(
-    private router: Router,
-    private scrollService: ScrollToService
+    public routingService: RoutingService
   ) {}
 
   ngOnInit() {
-    console.log(this.router.url);
-    this.entries = [
+    this.relations = [
       { label: 'Über uns', href: '/', anchor: 'ueber-uns' },
       { label: 'Dienstleistungen', href: '/', anchor: 'dienstleistungen' },
       { label: 'Kontakt', href: '/', anchor: 'kontakt' },
       { label: 'Impressum', href: '/impressum' }
     ];
   }
-
-  open(rel: NavigationEntry) {
-    if(rel.anchor && this.router.url === rel.href) {
-      this.scrollService.scrollTo({
-        target: rel.anchor
-      });
-    } else {
-      this.router.navigateByUrl(rel.href);
-    }
-  }
-}
-
-interface NavigationEntry {
-  label: string;
-  href: string;
-  anchor?: string;
 }
