@@ -21,6 +21,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CarouselMixin } from './common/mixins/carousel.mixin';
 import { JobsComponent } from './jobs/jobs.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormInputComponent } from './form-input/form-input.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     ServiceCardComponent,
     LandingPageComponent,
     JobsComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    FormInputComponent
   ],
   imports: [
     BrowserModule,

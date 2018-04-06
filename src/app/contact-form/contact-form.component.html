@@ -1,20 +1,35 @@
 <form [formGroup]="contact" (ngSubmit)="onSubmit()">
 
-  <div class="form-group" *ngFor="let input of inputs">
-      <label class="form-control-label">
-        {{input.label}}
-      </label>
-      <input class="form-control"
-        [formControl]="input.formControl"
-        [attr.id]="input.name"
-        [attr.placeholder]="input.placeholder"
-        [class.is-invalid]="input.hasErrors"
-        required />
-      <div class="invalid-feedback"
-        *ngIf="input.feedback && input.hasErrors">
-          {{input.feedback}}
-      </div>
-  </div>
+  <landwerk-form-input
+    [control]="contact.get('name')"
+    descriptor="name"
+    label="Name"
+    placeholder="Dein Name"
+    feedback="Bitte gib deinen Namen an.">
+  </landwerk-form-input>
+
+  <landwerk-form-input
+    [control]="contact.get('email')"
+    descriptor="email"
+    label="E-Mail"
+    placeholder="Deine E-Mail"
+    feedback="Gib eine gültige E-Mail-Adresse unter der wir dich kontaktieren können an.">
+  </landwerk-form-input>
+
+  <landwerk-form-input
+    [control]="contact.get('phone')"
+    descriptor="phone"
+    label="Telefon"
+    placeholder="Deine Telefonnummer">
+  </landwerk-form-input>
+
+  <landwerk-form-input
+    [control]="contact.get('subject')"
+    descriptor="subject"
+    label="Betreff"
+    placeholder="Worum geht es?"
+    feedback="Gib eine kurze Beschreibung worum es geht.">
+  </landwerk-form-input>
 
   <div class="form-group">
     <label class="form-control-label">Deine Nachricht an uns</label>
