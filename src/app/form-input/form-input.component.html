@@ -6,10 +6,9 @@
       [formControl]="control"
       [attr.id]="descriptor"
       [attr.placeholder]="placeholder"
-      [class.is-invalid]="hasErrors"
-      required />
+      [class.is-invalid]="hasErrors"/>
     <div class="invalid-feedback"
-      *ngIf="feedback && hasErrors">
+      *ngIf="hasErrors">
         {{feedback}}
     </div>
 </div>

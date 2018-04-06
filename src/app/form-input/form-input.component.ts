@@ -15,7 +15,9 @@ export class FormInputComponent implements OnInit {
   @Input() feedback?: string;
 
   get hasErrors(): boolean {
-    return this.control.invalid && (this.control.dirty || this.control.touched);
+    return this.feedback
+      && this.control.invalid
+      && (this.control.dirty || this.control.touched);
   }
   
   ngOnInit() {}
