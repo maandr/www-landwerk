@@ -26,33 +26,47 @@
 
   <div class="col-md-8">
     
-    <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" class="form-control" [(ngModel)]="message.name" placeholder="Ihr Name" />
-        </div>
+    <form [formGroup]="contact" (ngSubmit)="onSubmit()">
 
-        <div class="form-group">
-          <label for="email">E-Mail</label>
-          <input id="email" name="email" type="email" class="form-control" [(ngModel)]="message.email" placeholder="Ihre E-Mail Adresse" />
+      <div class="form-group">
+        <label class="form-control-label">Name</label>
+        <input class="form-control" id="name" placeholder="Dein Name" formControlName="name" required [class.is-invalid]="name.invalid && (name.dirty || name.touched)" />
+        <div class="invalid-feedback" *ngIf="name.invalid && (name.dirty || name.touched)">
+            Bitte gib deinen Namen an.
         </div>
+      </div>
 
-        <div class="form-group">
-          <label for="phone">Telefonnummer</label>
-          <input id="phone" name="phone" type="text" class="form-control" [(ngModel)]="message.phone" placeholder="Ihre Telefonnummer" />
+      <div class="form-group">
+        <label class="form-control-label">E-Mail</label>
+        <input class="form-control" id="email" placeholder="Deine E-Mail Adresse" formControlName="email" required [class.is-invalid]="email.invalid && (email.dirty || email.touched)" />
+        <div class="invalid-feedback" *ngIf="email.invalid && (email.dirty || email.touched)">
+          Gib eine gültige E-Mail-Adresse unter der wir dich kontaktieren können an.
         </div>
+      </div>
 
-        <div class="form-group">
-          <label for="subject">Betreff</label>
-          <input id="subject" name="subject" type="text" class="form-control" [(ngModel)]="message.subject" placeholder="Worum geht es?" />
+      <div class="form-group">
+        <label class="form-control-label">Telefonnummer</label>
+        <input class="form-control" id="phone" placeholder="Deine Telefonnummer" formControlName="phone" />
+      </div>
+
+      <div class="form-group">
+        <label class="form-control-label">Betreff</label>
+        <input class="form-control" id="subject" placeholder="Worum geht es?" formControlName="subject" required [class.is-invalid]="subject.invalid && (subject.dirty || subject.touched)" />
+        <div class="invalid-feedback" *ngIf="subject.invalid && (subject.dirty || subject.touched)">
+          Gib eine kurze Beschreibung worum es geht.
         </div>
+      </div>
 
-        <div class="form-group">
-          <label for="message">Ihre Nachricht an uns</label>
-          <textarea id="message" name="message" class="form-control" rows="6" [(ngModel)]="message.message"></textarea>
+      <div class="form-group">
+        <label class="form-control-label">Deine Nachricht an uns</label>
+        <textarea class="form-control" rows="6" id="message" placeholder="Deine Nachricht" formControlName="message" required [class.is-invalid]="message.invalid && (message.dirty || message.touched)">
+        </textarea>
+        <div class="invalid-feedback" *ngIf="message.invalid && (message.dirty || message.touched)">
+            Beschreibe dein Anliegen.
         </div>
+      </div>
 
-        <button type="submit" class="btn btn-primary" (click)="onSend()">Senden</button>
+      <button type="submit" class="btn btn-primary" [disabled]="contact.invalid">Senden</button>
     </form>
 
   </div>
