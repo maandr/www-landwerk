@@ -12,7 +12,6 @@ export class ContactFormComponent implements OnInit {
   private contactForm: FormGroup;
 
   get contact() { return this.contactForm; }
-  get message() { return this.contactForm.get('message'); }
 
   ngOnInit() {
     this.contactMessage = new ContactMessage();

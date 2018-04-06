@@ -22,6 +22,7 @@ import { CarouselMixin } from './common/mixins/carousel.mixin';
 import { JobsComponent } from './jobs/jobs.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormInputComponent } from './form-input/form-input.component';
+import { FormTextareaComponent } from './form-textarea/form-textarea.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { FormInputComponent } from './form-input/form-input.component';
     LandingPageComponent,
     JobsComponent,
     ContactFormComponent,
-    FormInputComponent
+    FormInputComponent,
+    FormTextareaComponent
   ],
   imports: [
     BrowserModule,

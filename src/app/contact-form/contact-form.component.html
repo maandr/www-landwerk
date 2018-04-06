@@ -31,14 +31,13 @@
     feedback="Gib eine kurze Beschreibung worum es geht.">
   </landwerk-form-input>
 
-  <div class="form-group">
-    <label class="form-control-label">Deine Nachricht an uns</label>
-    <textarea class="form-control" rows="6" id="message" placeholder="Deine Nachricht" formControlName="message" required [class.is-invalid]="message.invalid && (message.dirty || message.touched)">
-    </textarea>
-    <div class="invalid-feedback" *ngIf="message.invalid && (message.dirty || message.touched)">
-        Beschreibe dein Anliegen.
-    </div>
-  </div>
+  <landwerk-form-textarea
+    [control]="contact.get('message')"
+    descriptor="message"
+    label="Deine Nachricht an uns"
+    placeholder="Deine Nachricht"
+    feedback="Beschreibe dein Anliegen.">
+  </landwerk-form-textarea>
 
   <button type="submit" class="btn btn-primary" [disabled]="contact.invalid">Senden</button>
 
