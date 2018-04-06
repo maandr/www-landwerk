@@ -20,6 +20,7 @@ import { RoutingService } from './routing.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CarouselMixin } from './common/mixins/carousel.mixin';
 import { JobsComponent } from './jobs/jobs.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { JobsComponent } from './jobs/jobs.component';
     FooterComponent,
     ServiceCardComponent,
     LandingPageComponent,
-    JobsComponent
+    JobsComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

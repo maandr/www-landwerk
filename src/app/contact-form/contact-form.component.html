@@ -1,0 +1,43 @@
+<form [formGroup]="contact" (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label class="form-control-label">Name</label>
+    <input class="form-control" id="name" placeholder="Dein Name" formControlName="name" required [class.is-invalid]="name.invalid && (name.dirty || name.touched)" />
+    <div class="invalid-feedback" *ngIf="name.invalid && (name.dirty || name.touched)">
+        Bitte gib deinen Namen an.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-control-label">E-Mail</label>
+    <input class="form-control" id="email" placeholder="Deine E-Mail Adresse" formControlName="email" required [class.is-invalid]="email.invalid && (email.dirty || email.touched)" />
+    <div class="invalid-feedback" *ngIf="email.invalid && (email.dirty || email.touched)">
+      Gib eine gültige E-Mail-Adresse unter der wir dich kontaktieren können an.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-control-label">Telefonnummer</label>
+    <input class="form-control" id="phone" placeholder="Deine Telefonnummer" formControlName="phone" />
+  </div>
+
+  <div class="form-group">
+    <label class="form-control-label">Betreff</label>
+    <input class="form-control" id="subject" placeholder="Worum geht es?" formControlName="subject" required [class.is-invalid]="subject.invalid && (subject.dirty || subject.touched)" />
+    <div class="invalid-feedback" *ngIf="subject.invalid && (subject.dirty || subject.touched)">
+      Gib eine kurze Beschreibung worum es geht.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-control-label">Deine Nachricht an uns</label>
+    <textarea class="form-control" rows="6" id="message" placeholder="Deine Nachricht" formControlName="message" required [class.is-invalid]="message.invalid && (message.dirty || message.touched)">
+    </textarea>
+    <div class="invalid-feedback" *ngIf="message.invalid && (message.dirty || message.touched)">
+        Beschreibe dein Anliegen.
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="contact.invalid">Senden</button>
+
+</form>
