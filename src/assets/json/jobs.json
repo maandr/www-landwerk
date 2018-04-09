@@ -1,0 +1,25 @@
+{
+    "offers": [
+        {
+            "title": "Arbeiter*in (m/f)",
+            "description": "Lorem ipsum",
+            "responsibilities": [
+                "Do this",
+                "Do that"
+            ],
+            "skills": {
+                "profile": "Lorem ipsum",
+                "required": [
+                    "Flexible",
+                    "Reliable",
+                    "Drivers Licence"
+                ],
+                "additional": [
+                    "Experience in forestry",
+                    "Experience with machines"
+                ]
+            },
+            "contact": "Interested? Then send us your CV."
+        }
+    ]
+}

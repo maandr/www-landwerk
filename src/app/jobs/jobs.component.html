@@ -1,3 +1,30 @@
-<p>
-  jobs works!
-</p>
+<div *ngFor="let offer of offers">
+  <h3>{{offer.title}}</h3>
+  <p>{{offer.description}}</p>
+
+  <h4>Deine Aufgaben</h4>
+  <ul>
+    <li *ngFor="let responsibility of offer.responsibilities">
+      {{responsibility}}
+    </li>
+  </ul>
+
+  <h4>Das erwarten wir von dir</h4>
+  <ul>
+    <li *ngFor="let required of offer.skills.required">
+      {{required}}
+    </li>
+  </ul>
+
+  <div *ngIf="offer.skills.additional">
+    <h4>Zusätzlich wären folgende Fähigkeiten wünschenswert</h4>
+    <ul>
+      <li *ngFor="let optional of offer.skills.additional">
+        {{optional}}
+      </li>
+    </ul>
+  </div>
+
+  <h4>Interesse?</h4>
+  <p>{{offer.contact}}</p>
+</div>
